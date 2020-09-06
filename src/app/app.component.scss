@@ -1,0 +1,36 @@
+$main-background-color-1: #e9ecef;
+$main-background-color-2: #adb5bd;
+$main-text-color-header: #495057;
+$font-family-main: 'Kosugi Maru', sans-serif;
+$header-size-px: 20px;
+
+.main-body{
+    background: $main-background-color-1;
+    background: linear-gradient(180deg, $main-background-color-1 70%, $main-background-color-2 100%);
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    z-index: -100;
+}
+
+.main-header-block{
+    position: fixed;
+    width: 100%;
+    height: $header-size-px;
+}
+
+.main-header-name{
+    font-family: $font-family-main;
+    font-size: 10pt;
+    color: $main-text-color-header;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 0.2em;
+}
+

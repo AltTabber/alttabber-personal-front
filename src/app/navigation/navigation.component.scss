@@ -1,0 +1,21 @@
+$font-family-main: 'Kosugi Maru', sans-serif;
+$main-text-color-header: #495057;
+
+ul.main-header-link-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transform: translate(0, 60%);
+}
+
+.main-header-url-link{
+    font-family: $font-family-main;
+    font-size: 12pt;
+    color: $main-text-color-header;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+    letter-spacing: 0.2em;
+    a{
+        color: $main-text-color-header;
+    }
+}

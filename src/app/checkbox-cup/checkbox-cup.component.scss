@@ -1,0 +1,38 @@
+.heart-box{
+  color: #495057;
+  cursor: pointer;
+  font-size: 0.7em;
+  align-self: center;
+}
+
+.heart-box:hover {
+  color: #343A40;
+}
+
+.heart-box::selection {
+  color: none;
+  background: transparent;
+}
+
+.heart-box::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+.heart-box.heart-checked {
+  color: #adb5bd;
+  will-change: font-size;
+}
+
+.heart-cup {
+    position: fixed;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  display: inline;
+}
+
+.heart-block{
+    float: left;
+}

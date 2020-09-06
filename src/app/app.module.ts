@@ -10,6 +10,9 @@ import { CodePageComponent } from './code-page/code-page.component';
 import { ArtListComponent } from './art/art-list/art-list.component';
 import { ArtItemComponent } from './art/art-item/art-item.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,11 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    //material
+    MatCardModule
+
   ],
   providers: [
     { provide: "BASE_API_URL", useValue: "localhost:8080" }

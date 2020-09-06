@@ -2,7 +2,7 @@ $main-background-color-1: #e9ecef;
 $main-background-color-2: #adb5bd;
 $main-text-color-header: #495057;
 $font-family-main: 'Kosugi Maru', sans-serif;
-$header-size-px: 20px;
+$header-size-px: 40px;
 
 .main-body{
     background: $main-background-color-1;
@@ -21,9 +21,11 @@ $header-size-px: 20px;
 
 .main-header-block{
     position: fixed;
+    background: $main-background-color-1;
     width: 100%;
     height: $header-size-px;
     top: 0;
+    z-index: 5;
 }
 
 .main-header-name{

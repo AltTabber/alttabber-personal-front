@@ -1,0 +1,16 @@
+<ul class = "blog-card">
+    <li *ngFor="let blog of getBlogs()">
+        <mat-card>
+            <mat-card-title>
+                {{blog.header}}
+            </mat-card-title>
+            <mat-card-subtitle>
+                {{blog.createDate}}
+            </mat-card-subtitle>
+            <img *ngIf="blog.imageUrl" mat-card-image class="blog-card-photo" src="{{blog.imageUrl}}">
+            <mat-card-content>
+                {{blog.text}}
+            </mat-card-content>
+        </mat-card>
+    </li>
+</ul>

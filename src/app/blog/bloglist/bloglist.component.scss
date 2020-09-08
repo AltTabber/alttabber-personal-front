@@ -1,0 +1,31 @@
+$block-max-width: 800px;
+$block-min-width: 500px;
+
+ul.blog-card{
+    list-style-type: none;
+    margin-top: 50px;
+    padding-left: 0px;
+}
+.blog-card > li{
+    display: block;
+}
+
+.blog-card mat-card{
+    max-width: $block-max-width;
+    min-width: $block-min-width;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img.blog-card-photo{
+    object-fit: cover;
+    margin-left: auto;
+    min-width: $block-min-width;
+    max-width: $block-max-width;
+    min-height: $block-min-width;
+    max-height: $block-max-width;
+    width: 50vw;
+    height: 50vw;
+}

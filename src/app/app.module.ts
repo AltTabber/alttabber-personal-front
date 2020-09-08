@@ -8,11 +8,12 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { CheckboxCupComponent } from './checkbox-cup/checkbox-cup.component';
 import { CodePageComponent } from './code-page/code-page.component';
 import { ArtListComponent } from './art/art-list/art-list.component';
-import { ArtItemComponent } from './art/art-item/art-item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
+import { BlogListComponent } from './blog/bloglist/bloglist.component';
+import { BlogdetailComponent } from './blog/blogdetail/blogdetail.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatCardModule } from '@angular/material/card';
     CheckboxCupComponent,
     CodePageComponent,
     ArtListComponent,
-    ArtItemComponent
+    BlogListComponent,
+    BlogdetailComponent
   ],
   imports: [
     BrowserModule,

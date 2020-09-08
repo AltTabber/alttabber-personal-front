@@ -2,7 +2,7 @@ $main-background-color-1: #e9ecef;
 $main-background-color-2: #adb5bd;
 $main-text-color-header: #495057;
 $font-family-main: 'Kosugi Maru', sans-serif;
-$header-size-px: 40px;
+$header-size-px: 55px;
 
 .main-body{
     background: $main-background-color-1;
@@ -35,5 +35,31 @@ $header-size-px: 40px;
     text-align: center;
     margin-top: 10px;
     letter-spacing: 0.2em;
+    a{
+        color: $main-text-color-header;
+        text-decoration: none;
+    }
 }
 
+ul.main-header-links{
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+ul.main-header-links li{
+    font-family: $font-family-main;
+    font-size: 8pt;
+    padding: 5px;
+    display: inline;
+}
+
+ul.main-header-links a{
+    color: $main-text-color-header;
+    text-decoration: none;
+    :hover{
+        background-color: $main-text-color-header;
+        color: $main-background-color-1;
+    }
+}

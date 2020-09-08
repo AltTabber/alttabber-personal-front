@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WeekData } from './classes/WeekData'
+import { YearData } from './classes/YearData';
+import { WeeksDataService } from './../services/weeks-data.service'
 
 @Component({
   selector: 'app-checkbox-cup',
@@ -11,20 +13,26 @@ export class CheckboxCupComponent implements OnInit {
   private birthDate: Date;
   private finalDate: Date;
   private weekList: Array<WeekData>;
+  private yearList: Array<YearData>;
 
-  constructor() { }
+  private yearCount: number = 70;
+
+  private weeksDataService: WeeksDataService;
+
+  constructor(weeksDataService: WeeksDataService) {
+    this.weeksDataService = weeksDataService;
+  }
 
   ngOnInit(): void {
-    this.birthDate = new Date("October 19, 1992");
-    this.finalDate = this.getDatePlusYears(this.birthDate, 70);
-    this.weekList = new Array();
-    var weekNumber = this.getWeeksBetweenYears(this.birthDate, this.finalDate);
-    var weekNow = this.getWeeksBetweenYears(this.birthDate, new Date());
-    console.log(this.birthDate + "  " + this.finalDate);
-    console.log(weekNumber + "  " + weekNow);
-    for (let index = 0; index < weekNumber; index++) {
-      this.weekList.push(new WeekData((index > weekNow), true));
-    }
+
+    this.weeksDataService.getWeeksData().subscribe( (weeksData) => {
+      this.weekList = weeksData;
+      this.yearList = new Array();
+      var weekNumber = this.weekList.length;
+      this.weeksDataService.setWeeksData(this.weekList);
+    });
+
+    
   }
 
   private getDatePlusYears(startDate: Date, yearPlus: number) {

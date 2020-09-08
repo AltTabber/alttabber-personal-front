@@ -1,5 +1,8 @@
 <div class='heart-cup'>
     <div *ngFor='let item of getWeekList()' class='heart-block'>
-        <div class='heart-box' [ngClass]="{'heart-checked': item.isEnded}">🟊</div>
+        <a routerLink="/blogs" 
+            [queryParams]="{dateStart: item.dateStart, dateEnd: item.dateEnd}">
+            <div class='heart-box' [ngClass]="{'heart-checked': !item.passed}">🟊</div>
+        </a>
     </div>
 </div>

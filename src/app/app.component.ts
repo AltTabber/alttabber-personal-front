@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WeeksDataService } from './services/weeks-data.service'
 
 @Component({
   selector: 'app-root',

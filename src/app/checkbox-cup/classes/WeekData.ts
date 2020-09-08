@@ -1,9 +1,11 @@
 export class WeekData{
-    isEnded: boolean;
-    isComplete: boolean;
+    containsData: boolean;
+    passed: boolean;
+    dateStart: Date;
+    dateEnd: Date;
 
-    constructor(isEnded:boolean, isComplete:boolean){
-        this.isComplete = isComplete;
-        this.isEnded = isEnded;
+    constructor(containsData:boolean, passed:boolean){
+        this.passed = passed;
+        this.containsData = containsData;
     }
 }

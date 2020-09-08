@@ -7,7 +7,6 @@ import { MainComponent } from './main/main.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CheckboxCupComponent } from './checkbox-cup/checkbox-cup.component';
 import { CodePageComponent } from './code-page/code-page.component';
-import { ArtListComponent } from './art/art-list/art-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -22,7 +21,6 @@ import { BlogdetailComponent } from './blog/blogdetail/blogdetail.component';
     NavigationComponent,
     CheckboxCupComponent,
     CodePageComponent,
-    ArtListComponent,
     BlogListComponent,
     BlogdetailComponent
   ],

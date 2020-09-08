@@ -25,7 +25,6 @@
 }
 
 .heart-cup {
-    position: fixed;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -35,4 +34,15 @@
 
 .heart-block{
     float: left;
+    a{
+      text-decoration: none;
+    }
+}
+
+div.heart-year{
+  border-style: solid;
+
+  .heart-block{
+    float: left;
+  }
 }
